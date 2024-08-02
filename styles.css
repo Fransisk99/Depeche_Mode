@@ -1,0 +1,112 @@
+/* Existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+h2 {
+    color: #333;
+}
+
+.featured-artists, .album-listings {
+    margin-bottom: 2rem;
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.artist-item, .album-item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.album-item img {
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the box without stretching */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for the zoom effect */
+}
+
+.album-item img:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.album-item .tracks {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+}
+
+.track-item label {
+    margin-left: 0.5rem;
+    color: blue;
+}
+
+.track-item.checked label {
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media {
+    margin-top: 1rem;
+}
