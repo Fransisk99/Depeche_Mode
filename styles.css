@@ -78,7 +78,7 @@ h2 {
 }
 
 .album-item img:hover {
-    transform: scale(1.1); /* Zoom effect */
+    transform: scale(1.055); /* Zoom effect */
 }
 
 .album-item .tracks {
